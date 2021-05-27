@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test forms</title>
+</head>
+<body>
+    <header>
+        <h1>Criando formulários</h1><br>
+    </header>
+<h2>Cadastro de personagens</h2>
+<div>
+    <form id="personagem" method="POST" action="idk">
+        <label for="nome">Nome do personagem:</label>
+        <input type="text" id="nome" maxlength="70"><br>
+
+        <label for="tipo">Tipo da obra:</label>
+        <select id="tipo" name="tipo">
+            <option value="c">Comics</option>
+            <option value="m">Mangá</option>
+            <option value="a">Anime</option>
+            <option value="s">Série</option>
+            <option value="f">Filme</option>
+        </select><br>
+        
+        <label for="obra">Nome da obra:</label>
+        <input type="text" id="obra" required><br>
+
+        <label for="dn">Data de nascimento:</label>
+        <input type="date" id="dn"><br>
+
+        <label for="gender">Classificação:</label>
+        <input type="radio" name="gender" value="Homem">Homem
+        <input type="radio" name="gender" value="Mulher">Mulher
+        <input type="radio" name="gender" value="Adolescente">Adolescente
+        <input type="radio" name="gender" value="Menino">Menino
+        <input type="radio" name="gender" value="Menina">Menina<br>
+
+        <label for="foto">Foto: </label>
+        <input type="file" id="foto"><br>
+
+        <label for="obs">Observações</label><br>
+        <textarea id="obs" rows="5" cols="50">Comente aqui qlqr coisa!</textarea><br>
+
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar dados">
+
+
+    </form>
+</div>
+
+<section>
+    <h2>Testando tabelas</h2>
+    <table width="500" border="1">
+        <thead>
+            <tr>
+                <!-- Primeira linha -->
+                <th width="50%">Curso</th>
+                <th>Conteudista</th>
+                <th>Tutor</th>
+                <th>Realizado</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- Segunda linha -->
+            <td>Gamificação</td>
+            <td colspan="2">Henrique Poyatos</td>
+            <td rowspan="2">Sim</td>
+          </tr>
+          <tr>
+            <!-- Terceira linha -->
+            <td>Prototipação</td>
+            <td>Almir Alves</td>
+            <td>Almir Alves</td>
+          </tr>
+        </tbody>
+    </table>
+</section>
+</body>
+</html>
