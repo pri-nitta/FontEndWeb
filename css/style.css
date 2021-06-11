@@ -1,7 +1,30 @@
+*{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
 body{
     background-color: blueviolet;
 }
 
 h1{
     color: cornsilk;
+}
+
+h2 :first-child{
+    color: darkblue;
+    font-style: oblique;
+}
+
+h3,h4{
+    color: rgb(36, 3, 43);
+}
+
+/*div p{
+    color: hotpink;
+}*/
+
+h4+p{
+    color:rgb(219, 177, 248);
+}
+
+div >{
+    color: ivory;
 }
